@@ -28,7 +28,7 @@ ObjectId("52cbab70231dea1e819b2a39"),
 
 下面介绍几个相关的函数
 ```sh
-[python] view plain copy print?在CODE上查看代码片派生到我的代码片
+$mongo
 >> x=ObjectId()  
 ObjectId("53b3a89bf988c39955a30f9e")  
 > x  
@@ -90,7 +90,7 @@ Wed Jul  2 14:54:00.298 SyntaxError: Unexpected token .
 进入mongo命令行
 $mongo
 > var timestamp = Math.floor(new Date(2014,03,01).getTime() / 1000);  #getTime() 返回毫秒数  
-> var hex       = (‘00000000’ + timestamp.toString(16)).substr(-8); #前填充0  
+> var hex       = ('00000000' + timestamp.toString(16)).substr(-8); #前填充0  
 > var v_objectId  = new ObjectId(hex + new ObjectId().str.substring(8)); #更换掉前面的时间值  
 
 其它方法也比较简单，就是把一个日期转换成16进制后，替换到一个新生成的objectId 中去。
