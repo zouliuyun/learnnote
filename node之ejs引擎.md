@@ -3,14 +3,14 @@ node ejs是一个express模版解析引擎，用于解析html模版生成对应�
 
 比如：  
 ```sh
-[javascript] view plain copy 在CODE上查看代码片派生到我的代码片
+[javascript] 
 <% for(var i=0; i<4; ++i) { %>  
       <a href=#">this is a link!</a>  
 <% } %>  
 ```
 将生成为：
 ```sh
-[html] view plain copy 在CODE上查看代码片派生到我的代码片
+[html] 
 <a href=#">this is a link!</a>  
 <a href=#">this is a link!</a>  
 <a href=#">this is a link!</a>  
@@ -18,7 +18,7 @@ node ejs是一个express模版解析引擎，用于解析html模版生成对应�
 ```
 再如：
 ```sh
-[javascript] view plain copy 在CODE上查看代码片派生到我的代码片
+[javascript] 
 <%   
     //articles变量同样可以由后台提供，即res.render('article', {articles: allArticles});  
     var articles = [  { title : 'title name', content : 'this is a test content!'},    
@@ -35,7 +35,7 @@ tle : 'title name', content : 'this is a test content!'} ];
 ```
 或是
 ```sh
-[javascript] view plain copy 在CODE上查看代码片派生到我的代码片
+[javascript] 
 <% for(var i=0; i<articles.length; ++i){ %>  
       <div class="panel">  
           <h3><%= articles[i].title %></h3>  
@@ -47,7 +47,7 @@ tle : 'title name', content : 'this is a test content!'} ];
 ```
 将解析成：  
 ```sh
-[html] view plain copy 在CODE上查看代码片派生到我的代码片
+[html] 
 <div class="panel">  
      <h3>title name</h3>  
      <div class="panel-body">  
@@ -110,4 +110,12 @@ tle : 'title name', content : 'this is a test content!'} ];
     20、reverse，翻转数组或字符串；
     21、get:'prop'，取得属性为'prop'的值；
     22、json，转化为json格式字符串
+```
+实例展示
+```sh
+var str = 'this is a test';  
+var arr = [{name:'c'}, {name:'b'}, {name:'a'}];  
+<%: str | truncate_words:2 %>  => 'this is'  
+<%: arr | map:'name' | sort | join %> => 'a,b,c'  
+<%: arr | prepend:1 %> => [1, {name:'c'}, {name:'b'}, {name:'a'}]; 
 ```
