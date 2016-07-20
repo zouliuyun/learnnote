@@ -8,6 +8,7 @@
 * <p><a href="https://github.com/zouliuyun/learnnote/blob/master/linux之sed用法.md">linux之sed用法</a></p>
 
 ### mongodb
+* <p><a href="http://www.cnblogs.com/cswuyg/p/4595799.html">MongoDB一些常用操作</a></p>
 * <p><a href="https://github.com/zouliuyun/learnnote/blob/master/mongodb%20%E4%B9%8B%20objectId.md">mongodb 之 objectId</a></p>
 * <p><a href="http://www.lanceyan.com/tech/mongodb/mongodb_cluster_1.html">搭建高可用mongodb集群（一）——配置mongodb</a></p>
 * <p><a href="http://www.lanceyan.com/tech/mongodb/mongodb_repset1.html">搭建高可用mongodb集群（二）—— 副本集</a></p>
