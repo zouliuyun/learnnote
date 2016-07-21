@@ -5,6 +5,7 @@
 * <p><a href="https://github.com/zouliuyun/learnnote/blob/master/bash并发编程和flock.md">bash并发编程和flock</a></p>
 * <p><a href="https://github.com/zouliuyun/learnnote/blob/master/数组操作.md">数组操作</a></p>
 * <p><a href="https://github.com/zouliuyun/learnnote/blob/master/大括号扩展.md">大括号扩展</a></p>
+* <p><a href="http://www.yunweipai.com/archives/8485.html">9个函数示例，让你重新认识Shell</a></p>
 * <p><a href="https://github.com/zouliuyun/learnnote/blob/master/linux之sed用法.md">linux之sed用法</a></p>
 
 ### mongodb
