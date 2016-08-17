@@ -18,3 +18,7 @@
 
 ### nodejs
 * <p><a href="https://github.com/zouliuyun/learnnote/blob/master/node之ejs引擎.md">node之ejs引擎</a></p>
+
+### nginx
+* <p><a href="https://github.com/zouliuyun/learnnote/blob/master/nginx配置详解.md">nginx配置详解</a></p>
+
